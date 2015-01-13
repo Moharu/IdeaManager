@@ -1,9 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt_BR">
 <head>
+	<meta charset="UTF-8">
+	<script src="whattodo.js"></script>
+	<script src="listing.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<title>Idea Manager</title>
 </head>
-<body>
+<body style="background-color: white" onload="recData()">
+<h2>Idea Manager</h2>
+	<input placeholder="Usuário" id="username"/>
+	<input placeholder="Problema" id="problem"/>
+	<button onclick="sendData();recData();">  Enviar  </button>
+	<br>
+	<p id="txtHint"></p>
+	<table class="table table-bordered table-hover">
+		<thead>
+			<td width="30%">Nome do Usuário</td>
+			<td>Problema</td>
+		</thead>
+		<tbody id="listProblems">
+		</tbody>
+	</table>
 
 </body>
 </html>
