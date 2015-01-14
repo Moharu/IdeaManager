@@ -8,6 +8,11 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 		<title>Idea Manager</title>
+		<script>
+			$(document).ready(function(){
+			  $("#verification").hide()
+			});
+		</script>
 		<style>
 			#headerTittle {
 				position: fixed;
@@ -48,7 +53,7 @@
 				right: 30px;
 			    top: 2px;
 				text-align: right;
-				color: lightgray;
+				color: white;
 				font-family: "Kristen ITC";
 				font-size: 140%;
 				margin-right: 27px;
@@ -58,24 +63,66 @@
 				right: 30px;
 			    top: 35px;
 				text-align: right;
-				color: lightgray;
+				color: white;
 				font-family: "Kristen ITC";
 				font-size: 140%;
 				margin-right: 27px;
+			}
+			#user {
+				position: fixed;
+				right: 30px;
+			    top: 35px;
+				text-align: right;
+				color: white;
+				font-family: "Kristen ITC";
+				font-size: 140%;
+				margin-right: 27px;
+			}
+			#p02{
+				position: fixed;
+				right: 30px;
+			    top: 2px;
+				text-align: right;
+				color: black;
+				font-family: "Kristen ITC";
+				font-size: 140%;
+				margin-right: 27px;
+			}
+			#p03 {
+				position: fixed;
+				right: 30px;
+			    top: 35px;
+				text-align: right;
+				color: black;
+				font-family: "Kristen ITC";
+				font-size: 140%;
+				margin-right: 27px;
+			}
+			#oklogin {
+				position: fixed;
+				right: 20px;
+				top: 45px;
+			}
+			#backlogin {
+				position: fixed;
+				right: 20px;
+				top: 15px;
 			}
 		</style>
 	</head>
 	<body style="background-color: lightgray" onload="recData()">
 		<div id="headerTittle">
-			<p><a href="index_local.html"><h2 id="h01">Idea Manager</h2></a>
-			<a href="index_local.html"><h3 id="h02"> Criar uma conta </h3></a>
-			<a href="index_local.html"><h3 id="h03"> Log In </h3></a></p>
+			<a href="index_local.html"><h2 id="h01">Idea Manager</h2></a>
+			<div id="accountForm">
+				<h3 id="h02"><a href="regpage.html" style="text-decoration:none; color:white;">Criar uma conta </a></h3>
+				<h3 id="h03" onclick="login();"> Log In </h3>
+			</div>
 		</div>
 		<div id="problems">	
-			<br>
-			<!-- <input placeholder="Usuário" id="username"/> -->
+			<br><!-- 
+			<input placeholder="Usuário" id="username"/> -->
 			<input placeholder="Problema" id="problem"/>
-			<button onclick="sendData();recData();"> Enviar </button>
+			<button onclick="sendData();"> Enviar </button>
 			<br>
 			<p id="txtHint"></p>
 			<table class="table table-bordered table-hover">
@@ -86,6 +133,7 @@
 					<tbody id="listProblems">
 				</tbody>
 			</table>
+			<p id="verification" hide></p>
 		</div>
 	</body>
 </html>

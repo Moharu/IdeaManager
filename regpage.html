@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="whattodo.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script>
+		$(document).ready(function(){
+		  $("#verification").hide()
+		});
+	</script>
+	<title>Idea Manager</title>
+</head>
+<body style="background-color: white">
+<h2>Idea Manager</h2><br>
+	<h3> Criar nova conta: </h3> <br>
+	<input placeholder="Usuário" id="login"/> <br>
+	<input type="password" placeholder="Senha" id="password"/> <br>
+	<input type="password" placeholder="Repetir Senha" id="password2" /><br>
+	<button style="text-decoration:none; color:black;" onclick="sendReg()">  Criar  </button>
+	<a href="index_local.html" style="text-decoration:none; color:black;"><button> Voltar </button></a>
+	<p id="txtHint"></p>
+	<br>
+	<p id="verification">oi</p>
+
+</body>
+</html>

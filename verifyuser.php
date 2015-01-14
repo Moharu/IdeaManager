@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <body>
-<?php
+	<?php 
+	$validate = 0;
 	$servername = "localhost";
 	$username = "root";
 	$password = "002426ma";
 	$dbname = "ideamanager";
+	$rclogin = $_REQUEST["l"];
 
 	$con = mysqli_connect("localhost","$username","$password","$dbname");
-if (!$con) {
-    die('Could not connect: ' . mysqli_error($con));
-}
+	if (!$con) {
+	    die('Could not connect: ' . mysqli_error($con));
+	}
 	mysqli_select_db($con,"ideamanager");
-	$sql="SELECT UserName, Problem FROM Ideas";
+	$sql="SELECT Login, Password FROM Users WHERE Login = '$rclogin'";
 	$result = mysqli_query($con,$sql);
 
 	while($row = mysqli_fetch_array($result)) {
-		echo "<tr>";
-		echo "<td>" . $row['UserName'] . "</td>";
-		echo "<td>" . $row['Problem'] . "</td>";
-		echo "</tr>";
+		if($row['Login']===$rclogin){$validate = 1; break; }
 	}
+	echo $validate;
 	mysqli_close($con);
-?> 
+	 ?>
 </body>
 </html>
