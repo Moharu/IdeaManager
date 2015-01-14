@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+	<head>
+		<meta charset="UTF-8">
+		<script src="whattodo.js"></script>
+		<script src="listing.js"></script>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<title>Idea Manager</title>
+		<style>
+			#headerTittle {
+				position: fixed;
+				height: 100px;
+			    background-color:black;
+			    text-align:left;
+			    width: 1500px;
+			}
+			#problem {
+				width: 500px;
+				height: 50px;
+			}
+			#problems {
+				height: 1500px;
+				background-color: black;
+				margin-top: 100px;
+				margin-left: 380px;
+				margin-right: 380px;
+			    width:600px;
+			    float:left;
+			    padding:10px;	 	 
+			}
+			#sendButton{
+
+			}
+			#h01{
+				position: fixed;
+			    top: 17px;
+				width: 200px;
+				margin-left: 27px;
+				color: lightgray;
+				font-family: "Kristen ITC";
+				font-size: 180%;
+				text-align: left;
+			}
+			#h02{
+				position: fixed;
+				right: 30px;
+			    top: 2px;
+				text-align: right;
+				color: lightgray;
+				font-family: "Kristen ITC";
+				font-size: 140%;
+				margin-right: 27px;
+			}
+			#h03 {
+				position: fixed;
+				right: 30px;
+			    top: 35px;
+				text-align: right;
+				color: lightgray;
+				font-family: "Kristen ITC";
+				font-size: 140%;
+				margin-right: 27px;
+			}
+		</style>
+	</head>
+	<body style="background-color: lightgray" onload="recData()">
+		<div id="headerTittle">
+			<p><a href="index_local.html"><h2 id="h01">Idea Manager</h2></a>
+			<a href="index_local.html"><h3 id="h02"> Criar uma conta </h3></a>
+			<a href="index_local.html"><h3 id="h03"> Log In </h3></a></p>
+		</div>
+		<div id="problems">	
+			<br>
+			<!-- <input placeholder="Usuário" id="username"/> -->
+			<input placeholder="Problema" id="problem"/>
+			<button onclick="sendData();recData();"> Enviar </button>
+			<br>
+			<p id="txtHint"></p>
+			<table class="table table-bordered table-hover">
+				<thead>
+					<td width="30%">Nome do Usuário</td>
+					<td>Problema</td>
+				</thead>
+					<tbody id="listProblems">
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

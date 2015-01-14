@@ -8,22 +8,37 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<title>Idea Manager</title>
-</head>
-<body style="background-color: white" onload="recData()">
-<h2>Idea Manager</h2>
-	<input placeholder="Usuário" id="username"/>
-	<input placeholder="Problema" id="problem"/>
-	<button onclick="sendData();recData();">  Enviar  </button>
-	<br>
-	<p id="txtHint"></p>
-	<table class="table table-bordered table-hover">
-		<thead>
-			<td width="30%">Nome do Usuário</td>
-			<td>Problema</td>
-		</thead>
-		<tbody id="listProblems">
-		</tbody>
-	</table>
 
+	<style>
+		h2#h01 {
+		    color: blue;
+		    text-align: center;
+		    font-family: verdana;
+		}
+	</style>
+
+</head>
+<body style="background-color:lightgray" onload="recData()">
+<h2 id="h01">Idea Manager</h2>
+	<div>
+		<input placeholder="Usuário" id="username"/>
+		<input placeholder="Problema" id="problem"/>
+		<button onclick="sendData();recData();">  Enviar  </button>
+		<br>
+		<p id="txtHint"></p>
+		<table class="table table-bordered table-hover">
+			<thead>
+				<td width="30%">Nome do Usuário</td>
+				<td>Problema</td>
+			</thead>
+			<tbody id="listProblems">
+			</tbody>
+		</table>
+	</div>
+	<div>
+		<pre>
+			O lugar perfeito para compartilhar seus problemas cotidianos <!-- estava escrevendo aqui!!! -->
+		</pre>
+	</div>	
 </body>
 </html>
