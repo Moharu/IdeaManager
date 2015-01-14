@@ -11,7 +11,7 @@ function sendData(){
 	        recData();
 	    }
 	}
-	xmlhttp.open("GET","sendinfo.php?n="+name+"&pr="+problem,true);
+	xmlhttp.open("GET","http://192.168.100.114/sendinfo.php?n="+name+"&pr="+problem,true);
     xmlhttp.send();
 }
 
@@ -22,12 +22,12 @@ function recData(){
 	        document.getElementById("listProblems").innerHTML = xmlhttp2.responseText;
 	    }
 	}
-    xmlhttp2.open("GET","listproblems.php",true);
+    xmlhttp2.open("GET","http://192.168.100.114/listproblems.php",true);
     xmlhttp2.send();
 }
 
 function login(){
-	document.getElementById("accountForm").innerHTML = "<input id='p02' placeholder='Login'/><input type='password' id='p03' placeholder='Senha' /><button id='oklogin' onclick='requestLogin()'>Ok</button><button id='backlogin' onclick='displayMain()'> <- </button>";     
+	document.getElementById("accountForm").innerHTML = "<input id='p02' placeholder='Login'/><input type='password' id='p03' placeholder='Senha' /><h3 id='oklogin' onclick='requestLogin()'>Ok</h3><h3 id='backlogin' onclick='displayMain()'> Voltar </h3>";     
 }
 
 function requestLogin(){
@@ -54,7 +54,7 @@ function requestLogin(){
 }
 
 function displayMain(){
-	document.getElementById("accountForm").innerHTML = "<h3 id='h02'> Criar uma conta </h3><h3 id='h03' onclick='login();'> Log In </h3>"
+	document.getElementById("accountForm").innerHTML = "<h3 id='h02'><a href='regpage.html' style='text-decoration:none; color:white;''> Criar uma conta </a></h3><h3 id='h03' onclick='login();'> Log In </h3>"
 }
 
 function sendReg(){
@@ -81,7 +81,7 @@ function sendReg(){
 									document.getElementById("txtHint").innerHTML = xmlhttp5.responseText;
 								}
 							}
-							xmlhttp5.open("GET","createUser.php?l="+login+"&p="+password, true);
+							xmlhttp5.open("GET","http://192.168.100.114/createUser.php?l="+login+"&p="+password, true);
 							xmlhttp5.send();
 						}
 					}

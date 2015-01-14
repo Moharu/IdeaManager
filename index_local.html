@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<script src="whattodo.js"></script>
 		<script src="listing.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -26,13 +28,12 @@
 				height: 50px;
 			}
 			#problems {
-				height: 1500px;
 				background-color: black;
-				margin-top: 100px;
+				margin:auto;
+				/*margin-top: 100px;
 				margin-left: 380px;
-				margin-right: 380px;
+				margin-right: 380px;*/
 			    width:600px;
-			    float:left;
 			    padding:10px;	 	 
 			}
 			#sendButton{
@@ -44,8 +45,8 @@
 				width: 200px;
 				margin-left: 27px;
 				color: lightgray;
-				font-family: "Kristen ITC";
-				font-size: 180%;
+				font-family: "Indie Flower";
+				font-size: 220%;
 				text-align: left;
 			}
 			#h02{
@@ -54,7 +55,7 @@
 			    top: 2px;
 				text-align: right;
 				color: white;
-				font-family: "Kristen ITC";
+				font-family: "Exo";
 				font-size: 140%;
 				margin-right: 27px;
 			}
@@ -64,7 +65,7 @@
 			    top: 35px;
 				text-align: right;
 				color: white;
-				font-family: "Kristen ITC";
+				font-family: "Exo";
 				font-size: 140%;
 				margin-right: 27px;
 			}
@@ -74,43 +75,57 @@
 			    top: 35px;
 				text-align: right;
 				color: white;
-				font-family: "Kristen ITC";
+				font-family: "Exo";
 				font-size: 140%;
 				margin-right: 27px;
 			}
 			#p02{
 				position: fixed;
-				right: 30px;
-			    top: 2px;
-				text-align: right;
+				right: 58px;
+			    top: 12px;
+				text-align: left;
 				color: black;
-				font-family: "Kristen ITC";
+				font-family: "Exo";
 				font-size: 140%;
 				margin-right: 27px;
 			}
 			#p03 {
 				position: fixed;
-				right: 30px;
-			    top: 35px;
-				text-align: right;
+				right: 58px;
+			    top: 55px;
+				text-align: left;
 				color: black;
-				font-family: "Kristen ITC";
+				font-family: "Exo";
 				font-size: 140%;
 				margin-right: 27px;
 			}
 			#oklogin {
 				position: fixed;
-				right: 20px;
-				top: 45px;
+				right: 10px;
+				color: white;
+				font-family: "Exo";
+				font-size: 140%;
 			}
 			#backlogin {
 				position: fixed;
-				right: 20px;
-				top: 15px;
+				right: 10px;
+				top: 40px;
+				color: white;
+				font-family: "Exo";
+				font-size: 140%;
+			}
+			table, th, td {
+				table-layout: fixed;
+				max-height: 50px;
+				max-width: 500px;
+			}
+			td:first-child{
+				width:25%;
+				padding: 20px;
 			}
 		</style>
 	</head>
-	<body style="background-color: lightgray" onload="recData()">
+	<body style="background-color: lightgray; color: white; font-family:'Exo'; text-align:center;" onload="recData()">
 		<div id="headerTittle">
 			<a href="index_local.html"><h2 id="h01">Idea Manager</h2></a>
 			<div id="accountForm">
@@ -118,19 +133,20 @@
 				<h3 id="h03" onclick="login();"> Log In </h3>
 			</div>
 		</div>
-		<div id="problems">	
+		<div id="problems" class="table-responsive">	
 			<br><!-- 
 			<input placeholder="Usuário" id="username"/> -->
-			<input placeholder="Problema" id="problem"/>
-			<button onclick="sendData();"> Enviar </button>
+			<input style="color:black" placeholder="Problema" id="problem"/>
+			<button style="color:black" onclick="sendData();"> Enviar </button>
 			<br>
 			<p id="txtHint"></p>
-			<table class="table table-bordered table-hover">
+			<table class="table table-bordered">
 				<thead>
-					<td width="30%">Nome do Usuário</td>
-					<td>Problema</td>
+					<!-- <td width="30%">Nome do Usuário</td>
+					<td>Problema</td> -->
 				</thead>
-					<tbody id="listProblems">
+				<tbody id="listProblems">
+					
 				</tbody>
 			</table>
 			<p id="verification" hide></p>

@@ -12,18 +12,58 @@
 		});
 	</script>
 	<title>Idea Manager</title>
+	<style>
+			#headerTittle {
+				position: fixed;
+				height: 100px;
+			    background-color:black;
+			    text-align:left;
+			    width: 1500px;
+			}
+			#h01{
+				position: fixed;
+			    top: 17px;
+				width: 200px;
+				margin-left: 27px;
+				color: lightgray;
+				font-family: "Kristen ITC";
+				font-size: 180%;
+				text-align: left;
+			}
+			#regBox{
+				text-align: center;
+				height: 500px;
+				background-color: white;
+				margin-top: 100px;
+				margin-left: 380px;
+				margin-right: 380px;
+			    width:600px;
+			    float:left;
+			    padding:10px;	 
+			}
+			#backlogin {
+				position: fixed;
+				right: 10px;
+				top: 15px;
+			}
+	</style>
 </head>
-<body style="background-color: white">
-<h2>Idea Manager</h2><br>
-	<h3> Criar nova conta: </h3> <br>
-	<input placeholder="Usuário" id="login"/> <br>
-	<input type="password" placeholder="Senha" id="password"/> <br>
-	<input type="password" placeholder="Repetir Senha" id="password2" /><br>
-	<button style="text-decoration:none; color:black;" onclick="sendReg()">  Criar  </button>
-	<a href="index_local.html" style="text-decoration:none; color:black;"><button> Voltar </button></a>
-	<p id="txtHint"></p>
-	<br>
-	<p id="verification">oi</p>
+<body style="background-color: lightgray">
 
+	<div id="headerTittle">
+		<h2 id="h01">Idea Manager</h2><br>
+		<a href="index_local.html" style="text-decoration:none; color:black; text-align:center;"><button id="backlogin"> Voltar </button></a>
+	</div>
+
+	<div id="regBox">
+		<h3 style="text-align:center"> Criar nova conta: </h3> <br>
+		<input placeholder="Usuário" id="login" style="text-align:center"/> <br><br>
+		<input type="password" placeholder="Senha" id="password" style="text-align:center"/> <br><br>
+		<input type="password" placeholder="Repetir Senha" id="password2" style="text-align:center"/><br><br>
+		<button style="text-decoration:none; color:black; text-align:center;" onclick="sendReg()">  Criar  </button>
+		<p id="txtHint"></p>
+		<br>
+		<p id="verification">oi</p>
+	</div>
 </body>
 </html>
