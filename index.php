@@ -1,3 +1,7 @@
+<?php
+// Start the session
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt_BR">
 	<head>
@@ -12,7 +16,10 @@
 		<title>Idea Manager</title>
 		<script>
 			$(document).ready(function(){
-			  $("#verification").hide()
+			  $("#verification").hide();
+			  if($("#user").text()!==""){
+			  	$("#sendButton").removeClass("disabled").addClass("active");
+			  }
 			});
 		</script>
 		<style>
@@ -39,7 +46,7 @@
 			    padding:10px;	 	 
 			}
 			#sendButton{
-
+				opacity:1;
 			}
 			#h01{
 				position: fixed;
@@ -149,15 +156,23 @@
 		<div id="headerTittle">
 			<a href="index_local.html"><h2 id="h01">Idea Manager</h2></a>
 			<div id="accountForm">
-				<h3 id="h02"><a href="regpage.html" style="text-decoration:none; color:white;">Criar uma conta </a></h3>
-				<h3 id="h03"><a href="javascript:login()" style="text-decoration:none; color:white;"> Log In </a></h3>
+				<?php
+					if($_SESSION["userLogon"]!=""){
+						echo "<h2 id='h02'>Bem vindo(a), </h2><h2 id='user'>".$_SESSION["userLogon"]."</h2><h5 id='logout' onclick='logout()'>logout</h5>";
+					}
+					else{
+						echo "<h3 id='h02'><a href='regpage.html' style='text-decoration:none; color:white;'>Criar uma conta </a></h3><h3 id='h03'><a href='javascript:login()' style='text-decoration:none; color:white;'> Log In </a></h3>";
+					}
+				?>
+				<!-- <h3 id="h02"><a href="regpage.html" style="text-decoration:none; color:white;">Criar uma conta </a></h3>
+				<h3 id="h03"><a href="javascript:login()" style="text-decoration:none; color:white;"> Log In </a></h3> -->
 			</div>
 		</div>
 		<div id="problems" class="table-responsive">	
 			<br><!-- 
 			<input placeholder="Usuário" id="username"/> -->
 			<input style="color:black" placeholder="Problema" id="problem"/><br><br>
-			<button style="color:black; float:right; margin-right:40px;" onclick="sendData();" type="button" class="btn btn-default btn-md disabled" id="sendButton"> Enviar </button>
+			<button style="color:black; float:right; margin-right:40px; z-index:0" onclick="sendData();" type="button" class="btn btn-default btn-md disabled" id="sendButton"> Enviar </button>
 			<br><br>
 			<p id="txtHint"></p>
 			<table class="table">
@@ -168,7 +183,7 @@
 				<tbody id="listProblems">
 				</tbody>
 			</table>
-			<p id="verification" hide></p>
+			<p id="verification"></p>
 		</div>
 		<div style="background-color:white; float:left" width="200px" heigth="300px">
 		</div>

@@ -1,8 +1,15 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-<?php 
-	setcookie(userlogon,"", time() - 3600, "/");
- ?>
 <html>
 <body>
+<?php
+// remove all session variables
+session_unset();
+
+// destroy the session
+session_destroy();
+?>
 </body>
 </html>

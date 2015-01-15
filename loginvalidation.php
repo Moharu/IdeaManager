@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <body>
@@ -20,7 +23,7 @@
 
 	while($row = mysqli_fetch_array($result)) {
 		if($row['Login']===$rclogin  and $row['Password']===$pw){ 
-			setrawcookie("userlogon","$rclogin", time() + 86400, "/");
+			$_SESSION["userLogon"] = $rclogin;
 			$validate = 1; break; 
 		}
 	}
