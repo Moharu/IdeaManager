@@ -19,7 +19,10 @@
 	$result = mysqli_query($con,$sql);
 
 	while($row = mysqli_fetch_array($result)) {
-		if($row['Login']===$rclogin  and $row['Password']===$pw){ $validate = 1; break; }
+		if($row['Login']===$rclogin  and $row['Password']===$pw){ 
+			setrawcookie("userlogon","$rclogin", time() + 86400, "/");
+			$validate = 1; break; 
+		}
 	}
 	echo $validate;
 	mysqli_close($con);

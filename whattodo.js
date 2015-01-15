@@ -11,7 +11,7 @@ function sendData(){
 	        recData();
 	    }
 	}
-	xmlhttp.open("GET","http://192.168.100.114/sendinfo.php?n="+name+"&pr="+problem,true);
+	xmlhttp.open("GET","sendinfo.php?n="+name+"&pr="+problem,true);
     xmlhttp.send();
 }
 
@@ -22,7 +22,7 @@ function recData(){
 	        document.getElementById("listProblems").innerHTML = xmlhttp2.responseText;
 	    }
 	}
-    xmlhttp2.open("GET","http://192.168.100.114/listproblems.php",true);
+    xmlhttp2.open("GET","listproblems.php",true);
     xmlhttp2.send();
 }
 
@@ -41,7 +41,8 @@ function requestLogin(){
 			if(document.getElementById("verification").innerHTML == 1){
 				document.getElementById("p02").value = "";
 				document.getElementById("p03").value = "";				
-				document.getElementById("accountForm").innerHTML = "<h2 id='h02'>Bem vindo(a), </h2><h2 id='user'>"+login+"</h2>";		
+				document.getElementById("accountForm").innerHTML = "<h2 id='h02'>Bem vindo(a), </h2><h2 id='user'>"+login+"</h2><h5 id='logout' onclick='logout()'>logout</h5>";
+    			document.getElementById('sendButton').setAttribute('class','btn btn-default btn-md active');
 			}
 			else{
 				document.getElementById("p03").value = "";
@@ -54,7 +55,7 @@ function requestLogin(){
 }
 
 function displayMain(){
-	document.getElementById("accountForm").innerHTML = "<h3 id='h02'><a href='regpage.html' style='text-decoration:none; color:white;''> Criar uma conta </a></h3><h3 id='h03' onclick='login();'> Log In </h3>"
+	document.getElementById("accountForm").innerHTML = "<h3 id='h02'><a href='regpage.html' style='text-decoration:none; color:white;''> Criar uma conta </a></h3><h3 id='h03'><a href='javascript:login()' style='text-decoration:none; color:white;'> Log In </a></h3>";
 }
 
 function sendReg(){
@@ -81,7 +82,7 @@ function sendReg(){
 									document.getElementById("txtHint").innerHTML = xmlhttp5.responseText;
 								}
 							}
-							xmlhttp5.open("GET","http://192.168.100.114/createUser.php?l="+login+"&p="+password, true);
+							xmlhttp5.open("GET","createUser.php?l="+login+"&p="+password, true);
 							xmlhttp5.send();
 						}
 					}
@@ -100,4 +101,12 @@ function sendReg(){
 	else{
 		document.getElementById("txtHint").innerHTML = "Usuário Inválido!";	
 	}
+}
+
+function logout(){
+	document.getElementById("accountForm").innerHTML = "<h3 id='h02'><a href='regpage.html' style='text-decoration:none; color:white;''> Criar uma conta </a></h3><h3 id='h03'><a href='javascript:login()' style='text-decoration:none; color:white;'> Log In </a></h3>";
+	document.getElementById('sendButton').setAttribute('class','btn btn-default btn-md disabled');
+	xmlhttp6 = new XMLHttpRequest();
+    xmlhttp6.open("GET","logout.php",true);
+    xmlhttp6.send();
 }

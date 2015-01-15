@@ -12,7 +12,7 @@ if (!$con) {
     die('Could not connect: ' . mysqli_error($con));
 }
 	mysqli_select_db($con,"ideamanager");
-	$sql="SELECT UserName, Problem FROM Ideas";
+	$sql="SELECT UserName, Problem FROM Ideas ORDER BY id DESC";
 	$result = mysqli_query($con,$sql);
 
 	while($row = mysqli_fetch_array($result)) {
