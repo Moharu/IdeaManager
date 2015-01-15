@@ -25,11 +25,12 @@ session_start();
 		<style>
 			#headerTittle {
 				position: fixed;
-				margin-top: -100px;
-				height: 100px;
+				margin-top: -60px;
+				height: 60px;
 			    background-color:black;
 			    text-align:left;
 			    width: 1500px;
+			    opacity: 0.5;
 			}
 			#problem {
 				width: 500px;
@@ -38,7 +39,7 @@ session_start();
 			#problems {
 				background-color: black;
 				margin:auto;
-				margin-top:100px;
+				margin-top:60px;
 				/*margin-top: 100px;
 				margin-left: 380px;
 				margin-right: 380px;*/
@@ -49,19 +50,20 @@ session_start();
 				opacity:1;
 			}
 			#h01{
+				opacity: 1;
 				position: fixed;
-			    top: 17px;
+			    top: -6px;
 				width: 200px;
 				margin-left: 27px;
-				color: lightgray;
+				color: white;
 				font-family: "Indie Flower";
 				font-size: 220%;
 				text-align: left;
 			}
 			#h02{
 				position: fixed;
-				right: 30px;
-			    top: 2px;
+				right: 130px;
+			    top: 0px;
 				text-align: right;
 				color: white;
 				font-family: "Exo";
@@ -71,7 +73,7 @@ session_start();
 			#h03 {
 				position: fixed;
 				right: 30px;
-			    top: 35px;
+			    top: 0px;
 				text-align: right;
 				color: white;
 				font-family: "Exo";

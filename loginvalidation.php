@@ -14,6 +14,7 @@ session_start();
 	$pw = $_REQUEST["p"];
 
 	$con = mysqli_connect("localhost","$username","$password","$dbname");
+	$sql = mysqli_real_escape_string ($con,$sql);
 	if (!$con) {
 	    die('Could not connect: ' . mysqli_error($con));
 	}
