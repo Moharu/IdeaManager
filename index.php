@@ -25,12 +25,11 @@ session_start();
 		<style>
 			#headerTittle {
 				position: fixed;
-				margin-top: -60px;
-				height: 60px;
+				margin-top: -100px;
+				height: 100px;
 			    background-color:black;
 			    text-align:left;
 			    width: 1500px;
-			    opacity: 0.5;
 			}
 			#problem {
 				width: 500px;
@@ -50,20 +49,19 @@ session_start();
 				opacity:1;
 			}
 			#h01{
-				opacity: 1;
 				position: fixed;
 			    top: -6px;
 				width: 200px;
 				margin-left: 27px;
-				color: white;
+				color: lightgray;
 				font-family: "Indie Flower";
 				font-size: 220%;
 				text-align: left;
 			}
 			#h02{
 				position: fixed;
-				right: 130px;
-			    top: 0px;
+				right: 155px;
+			    top: -15px;
 				text-align: right;
 				color: white;
 				font-family: "Exo";
@@ -73,7 +71,27 @@ session_start();
 			#h03 {
 				position: fixed;
 				right: 30px;
-			    top: 0px;
+			    top: 35px;
+				text-align: right;
+				color: white;
+				font-family: "Exo";
+				font-size: 140%;
+				margin-right: 27px;
+			}
+			#h04 {
+				position: fixed;
+				right: 165px;
+			    top: 1px;
+				text-align: right;
+				color: white;
+				font-family: "Exo";
+				font-size: 140%;
+				margin-right: 27px;
+			}
+			#h05 {
+				position: fixed;
+				right: 50px;
+			    top: 1px;
 				text-align: right;
 				color: white;
 				font-family: "Exo";
@@ -82,8 +100,8 @@ session_start();
 			}
 			#logout{
 				position: fixed;
-				right: 10px;
-			    top: 68px;
+				right: -15px;
+			    top: 30px;
 				text-align: right;
 				color: white;
 				font-family: "Exo";
@@ -93,7 +111,7 @@ session_start();
 			#user {
 				position: fixed;
 				right: 30px;
-			    top: 27px;
+			    top: -2px;
 				text-align: right;
 				color: white;
 				font-family: "Exo";
@@ -102,8 +120,8 @@ session_start();
 			}
 			#p02{
 				position: fixed;
-				right: 58px;
-			    top: 12px;
+				right: 20px;
+			    top: 80px;
 				text-align: left;
 				color: black;
 				font-family: "Exo";
@@ -112,8 +130,8 @@ session_start();
 			}
 			#p03 {
 				position: fixed;
-				right: 58px;
-			    top: 55px;
+				right: 20px;
+			    top: 120px;
 				text-align: left;
 				color: black;
 				font-family: "Exo";
@@ -122,15 +140,16 @@ session_start();
 			}
 			#oklogin {
 				position: fixed;
-				right: 10px;
+				right: 100px;
+				top:1px;
 				color: white;
 				font-family: "Exo";
 				font-size: 140%;
 			}
 			#backlogin {
 				position: fixed;
-				right: 10px;
-				top: 40px;
+				right: 20px;
+				top: 1px;
 				color: white;
 				font-family: "Exo";
 				font-size: 140%;
@@ -152,28 +171,33 @@ session_start();
 				border-right-width:  10px;
 				border-left-style: dashed;
 			}
-		</style>
-	</head>
+			#imglogin {
+				height: 50px;
+				width: 50px;
+			}
+		</style>			<!-- LINHA 186 DEVE SER ALTERADA PARA RECEBER O LINK DO DB -->
+	</head>	
 	<body style="background-color: lightgray; color: white; font-family:'Exo'; text-align:center;" onload="recData()">
 		<div id="headerTittle">
-			<a href="index_local.html"><h2 id="h01">Idea Manager</h2></a>
+			<a href="index.php"><h2 id="h01">Idea Manager</h2></a>
 			<div id="accountForm">
 				<?php
 					if($_SESSION["userLogon"]!=""){
-						echo "<h2 id='h02'>Bem vindo(a), </h2><h2 id='user'>".$_SESSION["userLogon"]."</h2><h5 id='logout' onclick='logout()'>logout</h5>";
+						echo "<h2 id='h02'><img id='imglogin' src='http://i.imgur.com/sTZLwyw.jpg' alt='Imagem' >  Bem vindo(a), </h2><h2 id='user'>".$_SESSION["userLogon"]."</h2><h5 id='logout'><a href='javascript:logout()' style='text-decoration:none; color:white;'>logout</a></h5>";
 					}
 					else{
-						echo "<h3 id='h02'><a href='regpage.html' style='text-decoration:none; color:white;'>Criar uma conta </a></h3><h3 id='h03'><a href='javascript:login()' style='text-decoration:none; color:white;'> Log In </a></h3>";
+						echo "<h3 id='h04'><a href='regpage.html' style='text-decoration:none; color:white;'>Criar uma conta </a></h3><h3 id='h05'><a href='javascript:login()' style='text-decoration:none; color:white;'> Log In </a></h3>";
 					}
 				?>
 				<!-- <h3 id="h02"><a href="regpage.html" style="text-decoration:none; color:white;">Criar uma conta </a></h3>
 				<h3 id="h03"><a href="javascript:login()" style="text-decoration:none; color:white;"> Log In </a></h3> -->
 			</div>
 		</div>
+
 		<div id="problems" class="table-responsive">	
 			<br><!-- 
 			<input placeholder="Usuário" id="username"/> -->
-			<input style="color:black" placeholder="Problema" id="problem"/><br><br>
+			<input style="color:black" placeholder="Escreva aqui sua ideia genial..." id="problem"/><br><br>
 			<button style="color:black; float:right; margin-right:40px; z-index:0" onclick="sendData();" type="button" class="btn btn-default btn-md disabled" id="sendButton"> Enviar </button>
 			<br><br>
 			<p id="txtHint"></p>
