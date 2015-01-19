@@ -41,8 +41,9 @@ function requestLogin(){
 			if(document.getElementById("verification").innerHTML == 1){
 				document.getElementById("p02").value = "";
 				document.getElementById("p03").value = "";				
-				document.getElementById("accountForm").innerHTML = "<h2 id='h02'><img id='imglogin' alt='Imagem'>Bem vindo(a), </h2><h2 id='user'>"+login+"</h2><h5 id='logout' onclick='logout()'>logout</h5>";
+				document.getElementById("accountForm").innerHTML = "<h2 id='h02'><img id='imglogin' src='' alt='Imagem'> Bem vindo(a), </h2><h2 id='user'>"+login+"</h2><h5 id='logout' onclick='logout()'>logout</h5>";
     			document.getElementById('sendButton').setAttribute('class','btn btn-default btn-md active');
+    			getimg();
 			}
 			else{
 				document.getElementById("p03").value = "";
@@ -115,4 +116,16 @@ function logout(){
 	xmlhttp6 = new XMLHttpRequest();
     xmlhttp6.open("GET","logout.php",true);
     xmlhttp6.send();
+}
+
+function getimg(){
+	xmlhttp7 = new XMLHttpRequest();
+	xmlhttp7.onreadystatechange = function (){
+		if(xmlhttp7.readyState == 4 && xmlhttp7.status == 200){
+			document.getElementById('imglogin').src = xmlhttp7.responseText;
+			//document.getElementById('imglogin').alt = 'batata';
+		}
+	}
+	xmlhttp7.open("GET","usrimg.php", true);
+	xmlhttp7.send();
 }
