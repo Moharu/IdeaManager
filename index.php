@@ -159,21 +159,30 @@ session_start();
 				max-height: 50px;
 				max-width: 500px;
 				text-align: left;
-				border-right-style: dashed;
 				border-bottom-style: solid;
 				border-bottom-width: 1px;
 			}
 			td:first-child{
+				border-left-style: dashed;
+				width:15%;
+			}
+			td:nth-child(2) {
+				font-weight: bold;
 				text-align: center;
-				width:30%;
+				width:15%;
 				padding: 20px;
 				border-right-style: double;
 				border-right-width:  10px;
-				border-left-style: dashed;
+			}
+			td:nth-child(3){
+				border-right-style: dashed;
 			}
 			#imglogin {
-				height: 50px;
-				width: 50px;
+				width: 48px;
+				height: 48px;
+				border-radius: 24px;
+				-webkit-border-radius: 24px;
+				-moz-border-radius: 24px;
 			}
 		</style>			<!-- LINHA 186 DEVE SER ALTERADA PARA RECEBER O LINK DO DB -->
 	</head>	
@@ -182,8 +191,9 @@ session_start();
 			<a href="index.php"><h2 id="h01">Idea Manager</h2></a>
 			<div id="accountForm">
 				<?php
+					$usrimg = $_SESSION['ImageLink'];
 					if($_SESSION["userLogon"]!=""){
-						echo "<h2 id='h02'><img id='imglogin' src='http://i.imgur.com/sTZLwyw.jpg' alt='Imagem' >  Bem vindo(a), </h2><h2 id='user'>".$_SESSION["userLogon"]."</h2><h5 id='logout'><a href='javascript:logout()' style='text-decoration:none; color:white;'>logout</a></h5>";
+						echo "<h2 id='h02'><img id='imglogin' src='$usrimg' alt='Imagem' >  Bem vindo(a), </h2><h2 id='user'>".$_SESSION["userLogon"]."</h2><h5 id='logout'><a href='javascript:logout()' style='text-decoration:none; color:white;'>logout</a></h5>";
 					}
 					else{
 						echo "<h3 id='h04'><a href='regpage.html' style='text-decoration:none; color:white;'>Criar uma conta </a></h3><h3 id='h05'><a href='javascript:login()' style='text-decoration:none; color:white;'> Log In </a></h3>";

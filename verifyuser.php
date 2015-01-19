@@ -5,7 +5,7 @@
 	$validate = 0;
 	$servername = "localhost";
 	$username = "root";
-	$password = "123abc/*-";
+	$password = "002426ma";
 	$dbname = "ideamanager";
 	$rclogin = $_REQUEST["l"];
 

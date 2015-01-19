@@ -4,7 +4,7 @@
 <?php 			// CREATE USER ----MUDAR----
 	$servername = "localhost";
 	$username = "root";
-	$password = "123abc/*-";
+	$password = "002426ma";
 	$dbname = "ideamanager";
 	$l = $_REQUEST["l"];	//Login recebido do GET
 	$p = $_REQUEST["p"];	//Senha recebido do GET

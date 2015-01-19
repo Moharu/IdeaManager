@@ -5,14 +5,13 @@ function sendData(){
 	var problem = document.getElementById("problem").value;
 	document.getElementById("problem").value = "";
 	var name = document.getElementById("user").innerHTML;
-	var imagelink = document.getElementById("img").innerHTML;
     xmlhttp.onreadystatechange = function() {
 	    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
 	        document.getElementById("txtHint").innerHTML = xmlhttp.responseText;
 	        recData();
 	    }
 	}
-	xmlhttp.open("GET","sendinfo.php?n="+name+"&i="+imagelink+"&pr="+problem,true);
+	xmlhttp.open("GET","sendinfo.php?n="+name+"&pr="+problem,true);
     xmlhttp.send();
 }
 
@@ -42,13 +41,13 @@ function requestLogin(){
 			if(document.getElementById("verification").innerHTML == 1){
 				document.getElementById("p02").value = "";
 				document.getElementById("p03").value = "";				
-				document.getElementById("accountForm").innerHTML = "<h2 id='h02'><img id='imglogin' src='http://i.imgur.com/sTZLwyw.jpg' alt='Imagem'>Bem vindo(a), </h2><h2 id='user'>"+login+"</h2><h5 id='logout' onclick='logout()'>logout</h5>";
+				document.getElementById("accountForm").innerHTML = "<h2 id='h02'><img id='imglogin' alt='Imagem'>Bem vindo(a), </h2><h2 id='user'>"+login+"</h2><h5 id='logout' onclick='logout()'>logout</h5>";
     			document.getElementById('sendButton').setAttribute('class','btn btn-default btn-md active');
 			}
 			else{
 				document.getElementById("p03").value = "";
 				document.getElementById("txtHint").innerHTML = "Usuário ou senha inválidos!";
-			}
+			}	
 		}
 	}
 	xmlhttp3.open("GET","loginvalidation.php?l="+login+"&p="+pw, true);

@@ -8,7 +8,7 @@ session_start();
 	$validate = 0;
 	$servername = "localhost";
 	$username = "root";
-	$password = "123abc/*-";
+	$password = "002426ma";
 	$dbname = "ideamanager";
 	$rclogin = $_REQUEST["l"];
 	$pw = $_REQUEST["p"];
@@ -19,12 +19,13 @@ session_start();
 	    die('Could not connect: ' . mysqli_error($con));
 	}
 	mysqli_select_db($con,"ideamanager");
-	$sql="SELECT Login, Password FROM Users WHERE Login = '$rclogin'";  
+	$sql="SELECT Login, Password, Imagelink FROM Users WHERE Login = '$rclogin'";  
 	$result = mysqli_query($con,$sql);
 
 	while($row = mysqli_fetch_array($result)) {
 		if($row['Login']===$rclogin  and $row['Password']===$pw){ 
 			$_SESSION["userLogon"] = $rclogin;
+			$_SESSION["ImageLink"] = $row['Imagelink'];
 			$validate = 1; break; 
 		}
 	}
