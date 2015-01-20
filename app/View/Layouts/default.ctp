@@ -1,4 +1,5 @@
 <?php
+$user = $this->Session->read('Auth.User');
 /**
  * CakePHP(tm) : Rapid Development Framework (http://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (http://cakefoundation.org)
@@ -39,8 +40,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1>IdeaManager</h1>
-			<h3 id='h04'><a style='text-decoration:none; color:white;'>Criar uma conta </a></h3>   <h3 id='h05'><a style='text-decoration:none; color:white;'> Log In </a></h3>
+			<h1><a style="text-decoration:none; background:black;" href="http://localhost/ideas/">IdeaManager</a></h1>
+			<!--  <?php echo $user['username']; ?> -->
+			<?php
+				if(!empty($user['username'])){
+					echo "<h2 id='welcome'> Bem vindo(a), </h2><h2 id='user'>".$user["username"].".</h2><h5 id='logout'><a href='http://localhost/users/logout' style='text-decoration:none; color:white;'>logout</a></h5>";
+				}
+				else{
+					echo "<h3 id='h04'><a href='http://localhost/users/register' style='text-decoration:none; color:white;'>Criar uma conta </a></h3>   <h3 id='h05'><a href='http://localhost/users/login'style='text-decoration:none; color:white;'> Log In </a></h3>";
+				}
+			?>
+		<!-- 	<h3 id='h04'><a href='users/register' style='text-decoration:none; color:white;'>Criar uma conta </a></h3>   <h3 id='h05'><a href='users/login'style='text-decoration:none; color:white;'> Log In </a></h3> -->
 		</div>
 		<div id="content">
 

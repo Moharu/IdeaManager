@@ -1,8 +1,10 @@
 <!-- File: /app/View/Ideas/index.ctp -->
+<div id="problems">
+<p style="text-align:center; font-size:150%; color: lightgray"> > <?php echo $this->Html->link('Add Idea', array('controller' => 'ideas', 'action' => 'add')); ?> < </p>
 <table>
 	<?php foreach ($ideas as $idea): ?>
 		<tr>
-			<td> <?php echo $this->Html->link($idea['Idea']['title'],array('controller' => 'ideas', 'action' => 'view', $idea['Idea']['id'])); ?> </td>
+			<td><b> <?php echo $idea['Idea']['title']; ?> </b></td>
 			<td width="50%">
 				<?php 
 				echo $idea['Idea']['body'];
@@ -18,3 +20,4 @@
 	<?php endforeach; ?>
 	<?php unset($idea) ?>
 </table>
+</div>
