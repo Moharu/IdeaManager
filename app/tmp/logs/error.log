@@ -1,0 +1,570 @@
+2015-01-19 14:27:10 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts/index
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-19 14:31:08 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts/index
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-19 14:31:12 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts/
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-19 14:31:15 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /posts/1
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-19 14:32:47 Error: [MissingActionException] Action AppController::posts() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'posts',
+)
+Request URL: /App/posts/
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-19 14:32:59 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /Posts/
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-19 14:33:25 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /Posts/
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-19 14:34:52 Error: [MissingHelperException] Helper class ’Html’Helper could not be found.
+Exception Attributes: array (
+  'class' => '’Html’Helper',
+  'plugin' => false,
+)
+Request URL: /Posts/
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(897): HelperCollection->load('???Html???', Array)
+#1 /var/www/html/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/html/lib/Cake/Controller/Controller.php(1246): View->__construct(Object(PostsController))
+#3 /var/www/html/lib/Cake/Controller/Controller.php(945): Controller->_getViewObject()
+#4 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-19 14:34:52 Error: [MissingHelperException] Helper class ’Html’Helper could not be found.
+Exception Attributes: array (
+  'class' => '’Html’Helper',
+  'plugin' => false,
+)
+Request URL: /Posts/
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(897): HelperCollection->load('???Html???', Array)
+#1 /var/www/html/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/html/lib/Cake/Controller/Controller.php(1246): View->__construct(Object(PostsController))
+#3 /var/www/html/lib/Cake/Controller/Controller.php(945): Controller->_getViewObject()
+#4 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-19 14:35:34 Error: [MissingHelperException] Helper class ’Html’Helper could not be found.
+Exception Attributes: array (
+  'class' => '’Html’Helper',
+  'plugin' => false,
+)
+Request URL: /Posts/
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(897): HelperCollection->load('???Html???', Array)
+#1 /var/www/html/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/html/lib/Cake/Controller/Controller.php(1246): View->__construct(Object(PostsController))
+#3 /var/www/html/lib/Cake/Controller/Controller.php(945): Controller->_getViewObject()
+#4 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-19 14:35:34 Error: [MissingHelperException] Helper class ’Html’Helper could not be found.
+Exception Attributes: array (
+  'class' => '’Html’Helper',
+  'plugin' => false,
+)
+Request URL: /Posts/
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(897): HelperCollection->load('???Html???', Array)
+#1 /var/www/html/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/html/lib/Cake/Controller/Controller.php(1246): View->__construct(Object(PostsController))
+#3 /var/www/html/lib/Cake/Controller/Controller.php(945): Controller->_getViewObject()
+#4 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-19 14:35:37 Error: [MissingHelperException] Helper class ’Html’Helper could not be found.
+Exception Attributes: array (
+  'class' => '’Html’Helper',
+  'plugin' => false,
+)
+Request URL: /Posts/
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(897): HelperCollection->load('???Html???', Array)
+#1 /var/www/html/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/html/lib/Cake/Controller/Controller.php(1246): View->__construct(Object(PostsController))
+#3 /var/www/html/lib/Cake/Controller/Controller.php(945): Controller->_getViewObject()
+#4 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-19 14:35:37 Error: [MissingHelperException] Helper class ’Html’Helper could not be found.
+Exception Attributes: array (
+  'class' => '’Html’Helper',
+  'plugin' => false,
+)
+Request URL: /Posts/
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(897): HelperCollection->load('???Html???', Array)
+#1 /var/www/html/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/html/lib/Cake/Controller/Controller.php(1246): View->__construct(Object(PostsController))
+#3 /var/www/html/lib/Cake/Controller/Controller.php(945): Controller->_getViewObject()
+#4 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-19 14:38:30 Error: [MissingHelperException] Helper class ’Html’Helper could not be found.
+Exception Attributes: array (
+  'class' => '’Html’Helper',
+  'plugin' => false,
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(897): HelperCollection->load('???Html???', Array)
+#1 /var/www/html/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/html/lib/Cake/Controller/Controller.php(1246): View->__construct(Object(PostsController))
+#3 /var/www/html/lib/Cake/Controller/Controller.php(945): Controller->_getViewObject()
+#4 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-19 14:38:30 Error: [MissingHelperException] Helper class ’Html’Helper could not be found.
+Exception Attributes: array (
+  'class' => '’Html’Helper',
+  'plugin' => false,
+)
+Request URL: /posts
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(897): HelperCollection->load('???Html???', Array)
+#1 /var/www/html/lib/Cake/View/View.php(354): View->loadHelpers()
+#2 /var/www/html/lib/Cake/Controller/Controller.php(1246): View->__construct(Object(PostsController))
+#3 /var/www/html/lib/Cake/Controller/Controller.php(945): Controller->_getViewObject()
+#4 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#5 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-01-19 14:39:09 Error: [MissingViewException] View file "Posts/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/view.ctp',
+)
+Request URL: /posts/view/1
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-19 14:39:45 Error: [MissingViewException] View file "Posts/view.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts/view.ctp',
+)
+Request URL: /posts/view/1
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-20 15:12:20 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-20 15:12:20 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-20 15:12:20 Error: [MissingControllerException] Controller class UsersController could not be found.
+Exception Attributes: array (
+  'class' => 'UsersController',
+  'plugin' => NULL,
+)
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-20 15:17:35 Error: Fatal Error (4): syntax error, unexpected 'User’' (T_STRING) in [/var/www/html/app/View/Users/add.ctp, line 19]
+2015-01-20 15:17:35 Error: [FatalErrorException] syntax error, unexpected 'User’' (T_STRING)
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/a...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/a...', 19, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/a...', 19, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-20 15:18:01 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-20 15:20:00 Error: Fatal Error (4): syntax error, unexpected '?>', expecting function (T_FUNCTION) in [/var/www/html/app/Model/User.php, line 143]
+2015-01-20 15:20:00 Error: [FatalErrorException] syntax error, unexpected '?>', expecting function (T_FUNCTION)
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/a...', 143)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/a...', 143, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/a...', 143, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-20 15:20:11 Error: Fatal Error (4): syntax error, unexpected '?>', expecting function (T_FUNCTION) in [/var/www/html/app/Model/User.php, line 143]
+2015-01-20 15:20:11 Error: [FatalErrorException] syntax error, unexpected '?>', expecting function (T_FUNCTION)
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/a...', 143)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/a...', 143, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/a...', 143, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-20 15:20:13 Error: Fatal Error (4): syntax error, unexpected '?>', expecting function (T_FUNCTION) in [/var/www/html/app/Model/User.php, line 143]
+2015-01-20 15:20:13 Error: [FatalErrorException] syntax error, unexpected '?>', expecting function (T_FUNCTION)
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/a...', 143)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/a...', 143, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/a...', 143, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-20 15:20:50 Error: Fatal Error (4): syntax error, unexpected '?>', expecting function (T_FUNCTION) in [/var/www/html/app/Model/User.php, line 143]
+2015-01-20 15:20:50 Error: [FatalErrorException] syntax error, unexpected '?>', expecting function (T_FUNCTION)
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/a...', 143)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/a...', 143, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/a...', 143, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-20 15:21:30 Error: Fatal Error (1): Class 'BlowfishPasswordHasher' not found in [/var/www/html/app/Model/User.php, line 111]
+2015-01-20 15:21:30 Error: [FatalErrorException] Class 'BlowfishPasswordHasher' not found
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Blowfish...', '/var/www/html/a...', 111)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Blowfish...', '/var/www/html/a...', 111, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Blowfish...', '/var/www/html/a...', 111, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-20 15:22:13 Error: Fatal Error (1): Class 'BlowfishPasswordHasher' not found in [/var/www/html/app/Model/User.php, line 119]
+2015-01-20 15:22:13 Error: [FatalErrorException] Class 'BlowfishPasswordHasher' not found
+Request URL: /users/add
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'Blowfish...', '/var/www/html/a...', 119)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Blowfish...', '/var/www/html/a...', 119, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'Blowfish...', '/var/www/html/a...', 119, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-20 15:22:26 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /users
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-20 15:25:27 Error: [MissingViewException] View file "Users/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/edit.ctp',
+)
+Request URL: /users/edit/3
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-20 15:27:06 Error: [MissingActionException] Action IdeasController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'IdeasController',
+  'action' => 'login',
+)
+Request URL: /ideas/login
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IdeasController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-20 15:27:12 Error: [MissingActionException] Action IdeasController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'IdeasController',
+  'action' => 'login',
+)
+Request URL: /ideas/login
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IdeasController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-20 15:27:24 Error: [MissingActionException] Action IdeasController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'IdeasController',
+  'action' => 'login',
+)
+Request URL: /ideas/login
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IdeasController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-20 15:49:20 Error: [MissingActionException] Action IdeasController::logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'IdeasController',
+  'action' => 'logout',
+)
+Request URL: /ideas/logout
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IdeasController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-20 15:51:11 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /ideas
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/html/lib/Cake/View/View.php(848): HelperCollection->__isset('Auth')
+#2 /var/www/html/app/View/Layouts/default.ctp(42): View->__get('Auth')
+#3 /var/www/html/lib/Cake/View/View.php(961): include('/var/www/html/a...')
+#4 /var/www/html/lib/Cake/View/View.php(923): View->_evaluate('/var/www/html/a...', Array)
+#5 /var/www/html/lib/Cake/View/View.php(546): View->_render('/var/www/html/a...')
+#6 /var/www/html/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/html/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#8 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IdeasController), Object(CakeRequest))
+#10 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-01-20 15:54:50 Error: [MissingHelperException] Helper class AuthHelper could not be found.
+Exception Attributes: array (
+  'class' => 'AuthHelper',
+  'plugin' => false,
+)
+Request URL: /ideas
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Auth')
+#1 /var/www/html/lib/Cake/View/View.php(848): HelperCollection->__isset('Auth')
+#2 /var/www/html/app/View/Layouts/default.ctp(50): View->__get('Auth')
+#3 /var/www/html/lib/Cake/View/View.php(961): include('/var/www/html/a...')
+#4 /var/www/html/lib/Cake/View/View.php(923): View->_evaluate('/var/www/html/a...', Array)
+#5 /var/www/html/lib/Cake/View/View.php(546): View->_render('/var/www/html/a...')
+#6 /var/www/html/lib/Cake/View/View.php(481): View->renderLayout('', 'default')
+#7 /var/www/html/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#8 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#9 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IdeasController), Object(CakeRequest))
+#10 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-01-20 16:07:29 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/login
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-20 16:07:34 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/users/login
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-20 16:08:11 Error: [MissingControllerException] Controller class IedasController could not be found.
+Exception Attributes: array (
+  'class' => 'IedasController',
+  'plugin' => NULL,
+)
+Request URL: /iedas
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-20 16:17:41 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/logout
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-20 16:18:25 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/logout
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-20 16:18:28 Error: [MissingActionException] Action UsersController::users() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'users',
+)
+Request URL: /users/users/logout
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-21 13:31:19 Error: [MissingActionException] Action IdeasController::Array() could not be found.
+Exception Attributes: array (
+  'controller' => 'IdeasController',
+  'action' => 'Array',
+)
+Request URL: /ideas/Array
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IdeasController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-21 13:32:05 Error: [MissingActionException] Action IdeasController::4,funciona,2015-01-20 15:22:26,2015-01-20 15:22:26,admin() could not be found.
+Exception Attributes: array (
+  'controller' => 'IdeasController',
+  'action' => '4,funciona,2015-01-20 15:22:26,2015-01-20 15:22:26,admin',
+)
+Request URL: /ideas/4,funciona,2015-01-20%2015:22:26,2015-01-20%2015:22:26,admin
+Stack Trace:
+#0 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(IdeasController), Object(CakeRequest))
+#2 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-01-21 13:32:34 Error: Fatal Error (4): syntax error, unexpected '.' in [/var/www/html/app/View/Layouts/default.ctp, line 47]
+2015-01-21 13:32:34 Error: [FatalErrorException] syntax error, unexpected '.'
+Request URL: /ideas/
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/html/a...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/html/a...', 47, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/html/a...', 47, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-21 14:14:23 Error: [MissingControllerException] Controller class <preClass=Controller could not be found.
+Exception Attributes: array (
+  'class' => '<preClass=Controller',
+  'plugin' => NULL,
+)
+Request URL: /%3Cpre%20class=
+Stack Trace:
+#0 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-01-21 14:15:28 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/html/app/Controller/IdeasController.php, line 8]
+2015-01-21 14:15:28 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /ideas
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/a...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/a...', 8, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/a...', 8, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-01-21 15:39:07 Error: [NotFoundException] Invalid user
+Request URL: /users/edit
+Stack Trace:
+#0 [internal function]: UsersController->edit()
+#1 /var/www/html/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-21 15:39:36 Error: [MissingViewException] View file "Users/edit.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/edit.ctp',
+)
+Request URL: /users/edit/2
+Stack Trace:
+#0 /var/www/html/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /var/www/html/lib/Cake/Controller/Controller.php(959): View->render(NULL, NULL)
+#2 /var/www/html/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /var/www/html/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /var/www/html/app/webroot/index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-01-21 17:19:15 Error: Fatal Error (1): Call to a member function meta() on a non-object in [/var/www/html/app/View/Layouts/default.ctp, line 36]
+2015-01-21 17:19:15 Error: [FatalErrorException] Call to a member function meta() on a non-object
+Request URL: /ideas/
+Stack Trace:
+#0 /var/www/html/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/html/a...', 36)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/html/a...', 36, Array)
+#2 /var/www/html/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/html/a...', 36, Array)
+#3 /var/www/html/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
