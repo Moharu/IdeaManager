@@ -26,14 +26,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		IdeaManager
 	</title>
 	<?php
-		echo $this->Html->meta('icon');
-
 		echo $this->Html->css('cake.generic');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
 	?>
+	<?php
+        echo $this->Html->meta('icon','/app/favicon.ico', array
+		('type' =>'icon'));
+    ?> 
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Exo' rel='stylesheet' type='text/css'>
 </head>
@@ -43,11 +45,14 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<h1><a style="text-decoration:none; background:black;" href="http://localhost/ideas/">IdeaManager</a></h1>
 			<!--  <?php echo $user['username']; ?> -->
 			<?php
+				if($user['img'] == ""){
+					$user['img'] = "http://www.tubeisbol.com/sites/default/files/styles/large/public/default_images/default_profile_picture.png";
+				}
 				if(!empty($user['username'])){
-					echo "<h2 id='welcome'> Bem vindo(a), </h2><h2 id='user'>".$user["username"].".</h2><h5 id='logout'><a href='http://localhost/users/logout' style='text-decoration:none; color:white;'>logout</a></h5>";
+					echo "<img id='imglogin' src='".$user['img']."' alt=''>' > <h2 id='welcome'> Welcome, ".$user['username'].".</h2><h5 id='logout'><a href='http://localhost/users/logout' style='text-decoration:none; color:white;'>logout</a></h5>";
 				}
 				else{
-					echo "<h3 id='h04'><a href='http://localhost/users/register' style='text-decoration:none; color:white;'>Criar uma conta </a></h3>   <h3 id='h05'><a href='http://localhost/users/login'style='text-decoration:none; color:white;'> Log In </a></h3>";
+					echo "<h3 id='h04'><a href='http://localhost/users/register' style='text-decoration:none; color:white;'>Create an account </a></h3>   <h3 id='h05'><a href='http://localhost/users/login'style='text-decoration:none; color:white;'> Log In </a></h3>";
 				}
 			?>
 		<!-- 	<h3 id='h04'><a href='users/register' style='text-decoration:none; color:white;'>Criar uma conta </a></h3>   <h3 id='h05'><a href='users/login'style='text-decoration:none; color:white;'> Log In </a></h3> -->

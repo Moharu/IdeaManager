@@ -12,7 +12,7 @@ create
 );
 ?>
 <fieldset>
-<legend>
+<legend id="titleadd">
 <?php
 echo
 __(
@@ -39,6 +39,7 @@ input
 (
 'password'
 );
+echo $this->Form->input('img');
 echo
 $this
 ->

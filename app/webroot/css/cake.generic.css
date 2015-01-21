@@ -29,6 +29,15 @@ body {
 	font-size:90%;
 	margin: 0;
 }
+#imglogin {
+	float:right;
+	margin-right:-5px;
+	width: 54px;
+	height: 54px;
+	border-radius: 27px;
+	-webkit-border-radius: 27px;
+	-moz-border-radius: 27px;
+}
 a {
 	color: white;
 	text-decoration: none;
@@ -46,9 +55,14 @@ h1, h2, h3, h4 {
 	margin-bottom:0.5em;
 }
 h1 {
-	background:#fff;
-	color: #003d4c;
+	color: white;
+	font-family: "Exo";
+	text-align: center;
 	font-size: 200%;
+	padding-top: 20px;
+}
+b{
+	text-align:justify;
 }
 h2 {
 	background:#fff;
@@ -71,7 +85,40 @@ ul, li {
 p {
 	margin: 0 0 1em 0;
 }
-
+#IdeaEditForm{
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
+#IdeaAddForm{
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
+#UserAddForm{
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
+#UserRegisterForm{
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
+#UserLoginForm{
+	width: 600px;
+	text-align: center;
+	margin: auto;
+}
+#titlelogin{
+	padding-left: 58px;
+}
+#titleregister{
+	padding-left: 243px;
+}
+#titleadd{
+	padding-left: 237px;
+}
 #problems {
 	background-color: #101010;
 	margin:auto;
@@ -87,8 +134,9 @@ p {
 #welcome{
 	position:fixed;
 	float: right;
+	text-align: right;
 	background: black;
-	right: 210px;
+	right: 83px;
 	top: 21px;
 	font-size:150%;
 	color: lightgray;
@@ -108,13 +156,13 @@ p {
 	position:fixed;
 	float: right;
 	background: black;
-	right: 33px;
+	right: 82px;
 	top: 49px;
 }
 
 #h04 {
 	position: fixed;
-	right: 165px;
+	right: 140px;
     top: 21px;
 	text-align: right;
 	color: white;
@@ -124,7 +172,7 @@ p {
 }
 #h05 {
 	position: fixed;
-	right: 50px;
+	right: 40px;
     top: 21px;
 	text-align: right;
 	color: white;
@@ -150,6 +198,7 @@ p {
 	background: black;
 	padding: 10px 20px;
 	opacity: 0.8;
+	z-index: 2;
 }
 #header h1 {
 	line-height: 30px;	
@@ -179,8 +228,10 @@ p {
 	overflow: auto;
 }
 #footer {
+	position:fixed;
 	clear: both;
-	padding: 6px 10px;
+	right: 20px;
+	bottom: -5px;
 }
 #header a, #footer a {
 	color: #fff;
@@ -193,9 +244,6 @@ p {
 div.form,
 div.index,
 div.view {
-	float:right;
-	width:76%;
-	border-left:1px solid #666;
 	padding:10px 2%;
 }
 div.actions {
@@ -353,9 +401,11 @@ fieldset {
 	padding: 16px 10px;
 }
 fieldset legend {
-	color: #e32;
-	font-size: 160%;
-	font-weight: bold;
+	color: white;
+	font-family: "Exo";
+	font-size: 170%;
+	text-align:center;
+	z-index: 1;
 }
 fieldset fieldset {
 	margin-top: 0;
@@ -392,6 +442,7 @@ form div.submit {
 	margin-top: 10px;
 }
 label {
+	color: white;
 	display: block;
 	font-size: 110%;
 	margin-bottom:3px;

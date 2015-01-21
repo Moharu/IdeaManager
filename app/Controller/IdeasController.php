@@ -4,7 +4,9 @@ class IdeasController extends AppController {
 	public $components = array('Session');
 
 	public function index(){
-		$this->set('ideas',$this->Idea->find('all'));
+		$this->set('ideas',$this->Idea->find('all',
+			array('order' => array('Idea.id DESC'))
+			));
 	}
 	
 	public function isAuthorized($user){
@@ -39,6 +41,7 @@ class IdeasController extends AppController {
 			$this->Idea->create();
 			$this->request->data['Idea']['user_id'] = $this->Auth->user('id');
 			$this->request->data['Idea']['title'] = $this->Auth->user('username');
+			$this->request->data['Idea']['img'] = ($this->Auth->user('img')==""?"http://www.tubeisbol.com/sites/default/files/styles/large/public/default_images/default_profile_picture.png":$this->Auth->user('img'));
 			if($this->Idea->save($this->request->data)){
 				$this->Session->setFlash(__('Your idea has been saved.'));
 				return $this->redirect(array('action'=>'index'));

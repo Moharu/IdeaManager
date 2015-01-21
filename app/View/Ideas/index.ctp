@@ -4,8 +4,10 @@
 <table>
 	<?php foreach ($ideas as $idea): ?>
 		<tr>
-			<td><b> <?php echo $idea['Idea']['title']; ?> </b></td>
-			<td width="50%">
+			<td width="18%" style="text-align:center; max-width: 98px;"><img style='height:60px; width: 60px;' src="<?php
+			echo $idea['Idea']['img'];
+			?>"><b><?php echo $idea['Idea']['title']; ?></b></td>
+			<td width="65%">
 				<?php 
 				echo $idea['Idea']['body'];
 				 ?>
@@ -15,7 +17,6 @@
 					array('confirm' => 'Are you sure?')
 					); ?>
 				<?php echo $this->Html->link('Edit',array('action' => 'edit', $idea['Idea']['id'])); ?>
-			<td> <?php echo $idea['Idea']['created']; ?></td>
 		</tr>
 	<?php endforeach; ?>
 	<?php unset($idea) ?>
