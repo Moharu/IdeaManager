@@ -72,9 +72,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => '002426ma',
-		'database' => 'caketest',
+		'login' => 'adminijZDb9J',
+		'password' => ' WafGfFst5sgd',
+		'database' => 'ideamanager',
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
