@@ -71,7 +71,7 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'localhost',
+		'host' => '127.6.181.130',
 		'login' => 'adminijZDb9J',
 		'password' => ' WafGfFst5sgd',
 		'database' => 'ideamanager',
