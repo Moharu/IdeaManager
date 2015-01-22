@@ -66,15 +66,23 @@
  * flags =>
  * A key/value array of driver specific connection options.
  */
+define( "DB_SERVER",    $_ENV['OPENSHIFT_MYSQL_DB_HOST'] );
+
+define( "DB_USER",      $_ENV['OPENSHIFT_MYSQL_DB_USERNAME'] );
+
+define( "DB_PASSWORD",  $_ENV['OPENSHIFT_MYSQL_DB_PASSWORD'] );
+
+define( "DB_DATABASE",  $_ENV['OPENSHIFT_APP_NAME'] );
+
 class DATABASE_CONFIG {
 
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => '127.6.181.130',
-		'login' => 'adminijZDb9J',
-		'password' => ' WafGfFst5sgd',
-		'database' => 'ideamanager',
+		'host' => DB_SERVER,
+		'login' => DB_USER,
+		'password' => DB_PASSWORD,
+		'database' => DB_DATABASE,
 		'prefix' => '',
 		'encoding' => 'utf8',
 	);
